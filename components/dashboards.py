@@ -240,6 +240,7 @@ def graph2_show(data_receita, data_despesa, receita, despesa, start_date, end_da
 
     fig = px.bar(df_final, x="Data", y="Valor", color='Output', barmode="group")
 
+    fig.update_layout(title={'text': "Lançamentos no Período"})
     fig.update_layout(margin=graph_margin, height=350)
     fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)')
 
